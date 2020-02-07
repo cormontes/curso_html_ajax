@@ -46,3 +46,30 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+@media(min-width: 480px) {
+    .column-drop-flexbox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contenido-principal,
+    .primera {
+        flex-basis: calc(50% - 1rem);
+    }
+    /* .segunda no require hacer nada por default le otorga el 100% cuando flex-wrap lo empuja hacia abajo*/
+}
+
+@media(min-width: 780px) {
+    .column-drop-flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenido-principal,
+    .primera,
+    .segunda {
+        flex: 0 0 calc(33.3% - 1rem);
+        /* Segunda forma de hacerlo*/
+        /*flex-basis: calc(33.3% - 1rem);*/
+    }
+}
