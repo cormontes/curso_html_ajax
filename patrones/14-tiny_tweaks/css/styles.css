@@ -19,6 +19,12 @@ img {
     max-width: 100%;
 }
 
+@media(min-width:992px) {
+    img {
+        width: 80%;
+    }
+}
+
 h1 {
     font-size: 4rem;
 }
@@ -46,3 +52,6 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+
+/*Este modelo se basa a pequeños cambios practicamente solo cambia tamañs de letras o imagenes*/
