@@ -46,3 +46,21 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+@media(min-width: 768px) {
+    .con-sidebar {
+        display: flex;
+        justify-content: space-between;
+        /* Imvierta la posicion de las columnas */
+        flex-direction: row-reverse;
+    }
+    aside {
+        /*flex:0 0 es para no dejar crecer los objetos*/
+        flex: 0 0 calc(33.3% - 2rem);
+        /*Cambia el aside de posicion en este casi no se usa flex-direction;*/
+        /**order: -1;**/
+    }
+    article {
+        flex: 0 0 calc(66.7% - 2rem);
+    }
+}
