@@ -35,18 +35,35 @@
     </header>
 
     <main class="contenedor">
-        <h2 class="centrar-texto">Sobre nosotros</h2>
-        <div class="grid">
-            <div class="column-6">
-                <img src="img/contacto.jpg" alt="Imagen Nosotros">
+        <h2 class="centrar-texto">Contacto</h2>
+        <div class="grid centrar-columna">
+
+            <div class="column-12">
+                <img src="img/contacto.jpg" alt="Imagen de contacto">
             </div>
-            <div class="column-6">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumm</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus recusandae iusto quae neque dolorum sed ea eum! Pariatur aut at, possimus dignissimos quos error quasi eos mollitia necessitatibus suscipit?</p>
+            <div class="formulario-contacto column-10">
+                <form action="#">
+                    <div class="campo">
+                        <label for="nombre">nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="email">correo</label>
+                        <input type="text" id="email" placeholder="Tu Correo">
+                    </div>
+                    <div class="campo mensaje">
+                        <label for="mensaje">mensaje</label>
+                        <textarea id="mensaje"></textarea>
+                    </div>
+                    <div class="campo enviar">
+                        <input type="submit" value="Enviar" class="btn btn-primario">
+                    </div>
+
+                </form>
             </div>
+
         </div>
     </main>
-
 
     <footer class="site-footer">
         <div class="barra">
@@ -58,6 +75,7 @@
             </nav>
         </div>
     </footer>
+
 </body>
 
 </html>
